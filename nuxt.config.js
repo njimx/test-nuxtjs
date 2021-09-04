@@ -29,27 +29,7 @@ export default {
         content: "Demo NuxtJS"
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "preconnect",
-        href: process.env.API_BASE_URL,
-        crossorigin: true
-      },
-      {
-        rel: "dns-prefetch",
-        href: process.env.API_BASE_URL
-      },
-      {
-        rel: "preconnect",
-        href: process.env.CDN_URL,
-        crossorigin: true
-      },
-      {
-        rel: "dns-prefetch",
-        href: process.env.CDN_URL
-      }
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     noscript: [
       {
         innerHTML: "Please install/enable javascript !",
@@ -122,10 +102,14 @@ export default {
       /^(?!(|.*?:)cursor-move).+-move$/,
       /^router-link(|-exact)-active$/,
       /closeNav/,
+      /^vm--/,
       /^v-select/,
       /^vs__/,
-      /^vs--/
-    ]
+      /^vs--/,
+      /^vld-/,
+      /^navbar/
+    ],
+    whitelistPatternsChildren: [/vld-overlay$/]
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

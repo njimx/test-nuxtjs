@@ -16,6 +16,16 @@ table {
     }
   }
 }
+.navbar {
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
+  z-index: 970;
+  width: 100%;
+  top: 0;
+  &.navbar-hidden {
+    transform: translate3d(0, -100%, 0);
+  }
+}
 .btn {
   background-color: #3d3d3d;
   width: 100%;
