@@ -1,0 +1,35 @@
+{
+  "name": "test-nuxtjs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxtjs/axios": "^5.12.4",
+    "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/toast": "^3.3.1",
+    "axios-extensions": "^3.1.3",
+    "cookie-universal-nuxt": "^2.1.4",
+    "core-js": "^3.8.3",
+    "fuse.js": "^6.4.6",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.14.12",
+    "nuxt-purgecss": "^1.0.0",
+    "sass-loader": "^10.0.2",
+    "vee-validate": "^3.4.5",
+    "vue-js-modal": "^2.0.0-rc.6",
+    "vue-loading-overlay": "^3.4.2",
+    "vue-select": "^3.11.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/tailwindcss": "^3.4.2"
+  }
+}
