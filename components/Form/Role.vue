@@ -216,6 +216,7 @@ export default {
     },
     closeModal() {
       this.error = {};
+      this.$emit("closeModal");
       return this.$modal.hide("role-form");
     }
   },

@@ -1,7 +1,6 @@
 <template>
   <modal
     name="user-form"
-    @closed="closeModal"
     :minHeight="550"
     :adaptive="true"
     height="auto"
@@ -322,6 +321,7 @@ export default {
     },
     closeModal() {
       this.error = {};
+      this.$emit("closeModal");
       return this.$modal.hide("user-form");
     }
   },

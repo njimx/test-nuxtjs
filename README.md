@@ -10,7 +10,7 @@ This is just a demo NuxtJs project!
 
 ```bash
 # clone this Git repository and create first an .env file by following
-$ cp .env.example .env
+$ cp .env_example .env
 
 # install dependencies
 $ yarn

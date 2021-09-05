@@ -54,10 +54,12 @@
       </section>
     </div>
     <FormRole
+      :key="keyRow"
       :item="itemRow"
       :roleData="roleData"
       :routeName="$route.name"
       :paging="paging"
+      @closeModal="closeModal"
     />
   </div>
 </template>
@@ -75,7 +77,8 @@ export default {
         last: 1,
         total: 0
       },
-      itemRow: {}
+      itemRow: {},
+      keyRow: 1
     };
     const from = (data.paging.current - 1) * perPage;
     const to = data.paging.current * perPage;
@@ -138,6 +141,9 @@ export default {
       this.$toast.clear();
       this.itemRow = item;
       return this.$modal.show("role-form");
+    },
+    closeModal() {
+      this.keyRow++;
     }
   },
   mounted() {},

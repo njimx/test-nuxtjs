@@ -69,10 +69,12 @@
       </section>
     </div>
     <FormUser
+      :key="keyRow"
       :item="userRow"
       :userData="userData"
       :routeName="$route.name"
       :paging="paging"
+      @closeModal="closeModal"
     />
   </div>
 </template>
@@ -90,7 +92,8 @@ export default {
         last: 1,
         total: 0
       },
-      userRow: {}
+      userRow: {},
+      keyRow: 1
     };
     const from = (data.paging.current - 1) * perPage;
     const to = data.paging.current * perPage;
@@ -153,6 +156,9 @@ export default {
       this.$toast.clear();
       this.userRow = item;
       return this.$modal.show("user-form");
+    },
+    closeModal() {
+      this.keyRow++;
     }
   },
   mounted() {},
