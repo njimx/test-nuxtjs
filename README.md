@@ -12,7 +12,7 @@ This is just a demo NuxtJs project!
 # clone this Git repository and create first an .env file by following
 $ cp .env_example .env
 
-# install dependencies
+# install dependencies using yarn or npm, i prefer yarn here
 $ yarn
 
 # serve with hot reload at localhost:7777
